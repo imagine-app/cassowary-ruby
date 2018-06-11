@@ -1,8 +1,6 @@
 # Copyright (C) 2012 by Tim Felgentreff
 
 module Cassowary
-  VERSION = "0.5.0"
-
   class Error < StandardError; end
   class InternalError < Error; end
   class NonLinearResult < Error; end
@@ -13,6 +11,7 @@ end
 
 require "utils/equalities"
 
+require "version"
 require "variables"
 require "constraint"
 require "symbolic_weight"
