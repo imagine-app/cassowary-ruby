@@ -1,7 +1,7 @@
 # Copyright (C) 2012 by Tim Felgentreff
 
 module Cassowary
-    module Equalities
+  module Equalities
     def cn_equal(expr, strength = Strength::RequiredStrength, weight = 1.0)
       cn_equality(LinearEquation, self - expr, strength, weight)
     end
